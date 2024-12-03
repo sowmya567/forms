@@ -6,29 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> FORMS</h1>
-    <h3> Login Form</h3>
+    <h1>FORMS</h1>
+    
+    <!-- Login Form -->
+    <h3>Login Form</h3>
     <form method="POST" action="#">
         <fieldset>
             <legend>Personal Info:</legend>
             <p>
-                <input type="text" required placeholder="Enter Name"><br>
+                <input type="text" name="name" required placeholder="Enter Name"><br>
             </p>
             <p>
-                <input type="text" required placeholder="Enter Email"><br>
+                <input type="email" name="email" required placeholder="Enter Email"><br>
             </p>
             <p>
-                <input type="password" required placeholder="Enter password"><br>
+                <input type="password" name="password" required placeholder="Enter password"><br>
             </p>
             <p>
-                <input type="checkbox" id="chkRemember"><label for="chkRemember">Remember me</label>
+                <input type="checkbox" id="chkRemember" name="remember"><label for="chkRemember">Remember me</label>
             </p>
             <p>
                 State:<br>
-                <select>
-                    <option>AP</option>
-                    <option>TS</option>
-                    <option>TN</option>
+                <select name="state">
+                    <option value="AP">AP</option>
+                    <option value="TS">TS</option>
+                    <option value="TN">TN</option>
                 </select>
             </p>
             <p>
@@ -39,20 +41,21 @@
 
     <hr>
 
+    <!-- Signup Form -->
     <h3>Signup Form</h3>
     <form method="POST" action="#">
         <fieldset>
             <legend>Educational Information:</legend>
             <p>
                 Skills:<br>
-                <input type="checkbox" id="html"><label for="html">HTML</label><br>
-                <input type="checkbox" id="css"><label for="css">CSS</label><br>
-                <input type="checkbox" id="js"><label for="js">Javascript</label><br>
+                <input type="checkbox" id="html" name="skills" value="HTML"><label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="skills" value="CSS"><label for="css">CSS</label><br>
+                <input type="checkbox" id="js" name="skills" value="JavaScript"><label for="js">JavaScript</label><br>
             </p>
             <p>
                 Qualification:<br>
-                <input type="radio" name="Qualification" id="be"><label for="be">BE</label><br>
-                <input type="radio" name="Qualification" id="btech"><label for="btech">BTech</label><br>
+                <input type="radio" name="qualification" id="be" value="BE"><label for="be">BE</label><br>
+                <input type="radio" name="qualification" id="btech" value="BTech"><label for="btech">BTech</label><br>
             </p>
             <p>
                 <button type="submit">SUBMIT</button>
